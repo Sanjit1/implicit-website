@@ -2,14 +2,18 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <!-- TODO: Rename CG3D -->
   <meta name="description"
-        content="CG3D: Compositional Generation for Text-to-3D via Gaussian Splatting">
+        content="CG3D: Implicit Neural Models to Extract Heart Rate from Video">
+  <!-- TODO: Also figure out keywords -->
   <meta name="keywords" content="CG3D, Composition, Radiance Fields, 3D Gaussian Splatting">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" type="image/x-icon" href="/cg3d.github.io/media/pipeline.png">
+  <!-- TODO: Check if any other icon is needed -->
+  <link rel="icon" type="image/x-icon" href="./media/ippg_teaser.png">
   
-  <title>CG3D: Compositional Generation for Text-to-3D via Gaussian Splatting</title>
+  <!-- TODO: Rename CG3D -->
+  <title>CG3D: Implicit Neural Models to Extract Heart Rate from Video</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -74,6 +78,7 @@
   <!-- https://swiperjs.com/demos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 
   <link rel="image_src" href="./media/pipeline.png">
   
@@ -167,22 +172,30 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">CG3D: Compositional Generation for Text-to-3D
-            via Gaussian Splatting</h1>
+          <!-- TODO: Rename CG3D -->
+          <h1 class="title is-1 publication-title">CG3D: Implicit Neural Models to Extract Heart Rate from Video</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://asvilesov.github.io/">Alexander Vilesov</a><sup>*</sup>,</span>
-              <span class="author-block">
-                <a href="https://pradyumnachari.github.io/">Pradyumna Chari</a><sup>*</sup>,</span>
-              <span class="author-block">
-                <a href="https://www.ee.ucla.edu/achuta-kadambi/">Achuta Kadambi</a>,
-              </span>
+                <a href="https://pradyumnachari.github.io/">Pradyumna Chari</a><sup>*1</sup>,</span>
+                <a href="https://anirudh0707.github.io/">Anirudh Bindiganavale Harish</a><sup>*2</sup>,</span>
+                <a href="https://adnan-armouti.github.io/">Adnan Armouti</a><sup>3</sup>,</span>
+                <a href="https://asvilesov.github.io/">Alexander Vilesov</a><sup>1</sup>,</span>
+                <a href="https://sanjit1.github.io/">Sanjit Sarda</a><sup>1</sup>,</span>
+                <a href="https://www.uclahealth.org/laleh-jalilian/">Laleh Jalilian</a><sup>1</sup>,</span>
+                <a href="https://www.ee.ucla.edu/achuta-kadambi/">Achuta Kadambi</a><sup>1</sup>,</span>
             </div>
+            <br>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">University of California, Los Angeles</span>
+          <!-- TODO: Fix author block too -->
+          <div class="is-size-8 publication-authors">
+            <span class="author-block"><sup>1</sup>University of California, Los Angeles</span>
+            <br>
+            <span class="author-block"><sup>2</sup>Rice University</span>
+            <br>
+            <span class="author-block"><sup>3</sup>Cornell Tech</span>
           </div>
 
+          <!-- TODO: PDF and Video Links are incorrect(Code is fine), fix this -->
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -202,17 +215,17 @@
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
-                  <span>Video</span>
+                  <span>Video(Coming Soon!)</span>
                 </a>
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://github.com/UCLA-VMG/FastImplicitPleth"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (Coming soon!)</span>
+                  <span>Code</span>
                   </a>
               </span>
             </div>
@@ -240,6 +253,8 @@
   </div>
 </section> -->
 
+
+<!-- TODO: Generate and add any visuals -->
 
 <section class="hero is-light is-small">
   <div class="hero-body">
@@ -367,29 +382,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            With the onset of diffusion-based generative models and their ability to generate 
-            text-conditioned images, content generation has received a massive invigoration. 
-            Recently, these models have been shown to provide useful guidance for the generation 
-            of 3D graphics assets. 
-            However, existing work in text-conditioned 3D generation faces fundamental constraints: 
-            (i) inability to generate detailed, multi-object scenes, 
-            (ii) inability to textually control multi-object configurations, and 
-            (iii) physically realistic scene composition. 
-            In this work, we propose CG3D, a method for compositionally generating scalable 
-            3D assets that resolves these constraints. 
-            We find that explicit Gaussian radiance fields, parameterized to allow for compositions 
-            of objects, possess the capability to enable semantically and physically consistent scenes. 
-            By utilizing a guidance framework built around this explicit representation, we show state of
-            the art results, capable of even exceeding the guiding diffusion model in terms of object 
-            combinations and physics accuracy.
+            Scene representation networks, or implicit neural representations (INR) have seen a range of success in numerous image and video applications. However, being universal function fitters, they fit all variations in videos without any selectivity. This is particularly a problem for tasks such as remote plethysmography, the extraction of heart rate information from face videos. As a result of low native signal to noise ratio, previous signal processing techniques suffer from poor performance, while previous learning-based methods have improved performance but suffer from hallucinations that mitigate generalizability. Directly applying prior INRs cannot remedy this signal strength deficit, since they fit to both the signal as well as interfering factors. In this work, we introduce an INR framework that increases this plethysmograph signal strength. Specifically, we leverage architectures to have selective representation capabilities. We are able to decompose the face video into a blood plethysmograph component, and a face appearance component. By inferring the plethysmograph signal from this blood component, we show state-of-the-art performance on out-of-distribution samples without sacrificing performance for in-distribution samples. We implement our framework on a custom-built multiresolution hash encoding backbone to enable practical dataset-scale representations through a 50x speed-up over traditional INRs. We also present a dataset of optically challenging out-of-distribution scenes to test generalization to real-world scenarios.
           </p>
-          
           <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
               <h2 class="title is-3">Video</h2>
               <div class="publication-video">
-                <iframe src="https://www.youtube.com/embed/FMAVeolsE7s?si=IAd06858AHk8zxvL"
-                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <!-- TODO: Add paper video once out -->
+                <!-- <iframe src="https://www.youtube.com/embed/FMAVeolsE7s?si=IAd06858AHk8zxvL"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                <p>Coming soon!</p>                      
               </div>
             </div>
           </div>
@@ -574,7 +576,7 @@
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{vilesov23cg3d,
   author    = {Vilesov, Alexander and Chari, Pradyumna and Kadambi, Achuta},
-  title     = {CG3D: Compositional Generation for Text-to-3D via Gaussian Splatting},
+  title     = {CG3D: Implicit Neural Models to Extract Heart Rate from Video},
   journal   = {Arxiv},
   year      = {2023},
 }</code></pre>
