@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Implicit Neural Models to Extract Heart Rate from Video">
-  <meta name="keywords" content="PPG, INR, hash grids, OOD, Plethysmography, Implicit Neural Representations, Out of Distribution">
+  <meta name="description" content="Implicit Neural Models to Extract Heart Rate from Video">
+  <meta name="keywords"
+    content="PPG, INR, hash grids, OOD, Plethysmography, Implicit Neural Representations, Out of Distribution">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- TODO: Check if any other icon is needed -->
   <link rel="icon" type="image/x-icon" href="./media/teaser.png">
-  
+
   <title>Implicit Neural Models to Extract Heart Rate from Video</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -26,15 +27,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script> -->
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -45,8 +44,7 @@
 
   <!-- custom additional scripts -->
 
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- https://docs.mathjax.org/en/latest/web/configuration.html#configuration-using-an-in-line-script -->
   <script>
     MathJax = {
@@ -58,27 +56,20 @@
       }
     };
   </script>
-  <script type="text/javascript" id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
   </script>
 
-  <script
-  defer
-  src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"
-  ></script>
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"
-  />
+  <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
 
   <!-- swiper -->
   <!-- https://swiperjs.com/demos -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 
   <link rel="image_src" href="./media/pipeline.png">
-  
+
   <!-- img comparison slider -->
   <!-- https://github.com/sneas/img-comparison-slider -->
   <style>
@@ -86,7 +77,7 @@
     .after {
       margin: 0;
     }
-  
+
     .before figcaption,
     .after figcaption {
       background: #fff;
@@ -100,30 +91,26 @@
       transform: translateY(-50%);
       line-height: 70%;
     }
-  
+
     .before figcaption {
       left: 4px;
     }
-  
+
     .after figcaption {
       right: 4px;
     }
   </style>
-  <script
-  defer
-  src="./static/js/image-comparison-slider.js"
-  ></script>
-  <link
-    rel="stylesheet"
-    href="./static/css/image-comparison-slider.css"
-  />
+  <script defer src="./static/js/image-comparison-slider.js"></script>
+  <link rel="stylesheet" href="./static/css/image-comparison-slider.css" />
 
 </head>
-<body>
-</head>
-<body>
 
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+<body>
+  </head>
+
+  <body>
+
+    <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -164,77 +151,76 @@
 </nav> -->
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <!-- TODO: Rename CG3D -->
-          <h1 class="title is-1 publication-title">CG3D: Implicit Neural Models to Extract Heart Rate from Video</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://pradyumnachari.github.io/">Pradyumna Chari</a><sup>*1</sup>,</span>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <!-- TODO: Rename CG3D -->
+              <h1 class="title is-1 publication-title">CG3D: Implicit Neural Models to Extract Heart Rate from Video
+              </h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://pradyumnachari.github.io/">Pradyumna Chari</a><sup>*1</sup>,</span>
                 <a href="https://anirudh0707.github.io/">Anirudh Bindiganavale Harish</a><sup>*2</sup>,</span>
                 <a href="https://adnan-armouti.github.io/">Adnan Armouti</a><sup>3</sup>,</span>
                 <a href="https://asvilesov.github.io/">Alexander Vilesov</a><sup>1</sup>,</span>
                 <a href="https://sanjit1.github.io/">Sanjit Sarda</a><sup>1</sup>,</span>
                 <a href="https://www.uclahealth.org/laleh-jalilian/">Laleh Jalilian</a><sup>1</sup>,</span>
                 <a href="https://www.ee.ucla.edu/achuta-kadambi/">Achuta Kadambi</a><sup>1</sup>,</span>
+              </div>
+              <br>
+
+              <!-- TODO: Fix author block too -->
+              <div class="is-size-8 publication-authors">
+                <span class="author-block"><sup>1</sup>University of California, Los Angeles</span>
+                <br>
+                <span class="author-block"><sup>2</sup>Rice University</span>
+                <br>
+                <span class="author-block"><sup>3</sup>Cornell Tech</span>
+              </div>
+
+              <!-- TODO: PDF and Video Links are incorrect(Code is fine), fix this -->
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <span class="link-block">
+                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper(Coming Soon!)</span>
+                    </a>
+                  </span>
+                  <!-- Video Link. -->
+                  <span class="link-block">
+                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Video(Coming Soon!)</span>
+                    </a>
+                  </span>
+                  <!-- Code Link. -->
+                  <span class="link-block">
+                    <a href="https://github.com/UCLA-VMG/FastImplicitPleth"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                </div>
+
+              </div>
             </div>
-            <br>
-
-          <!-- TODO: Fix author block too -->
-          <div class="is-size-8 publication-authors">
-            <span class="author-block"><sup>1</sup>University of California, Los Angeles</span>
-            <br>
-            <span class="author-block"><sup>2</sup>Rice University</span>
-            <br>
-            <span class="author-block"><sup>3</sup>Cornell Tech</span>
-          </div>
-
-          <!-- TODO: PDF and Video Links are incorrect(Code is fine), fix this -->
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper(Coming Soon!)</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video(Coming Soon!)</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/UCLA-VMG/FastImplicitPleth"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-            </div>
-
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- <section class="hero teaser">
+    <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -251,9 +237,9 @@
 </section> -->
 
 
-<!-- TODO: Generate and add any visuals -->
+    <!-- TODO: Generate and add any visuals -->
 
-<!-- <section class="hero is-light is-small">
+    <!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -371,40 +357,53 @@
 </section> -->
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Scene representation networks, or implicit neural representations (INR) have seen a range of success in numerous image and video applications. However, being universal function fitters, they fit all variations in videos without any selectivity. This is particularly a problem for tasks such as remote plethysmography, the extraction of heart rate information from face videos. As a result of low native signal to noise ratio, previous signal processing techniques suffer from poor performance, while previous learning-based methods have improved performance but suffer from hallucinations that mitigate generalizability. Directly applying prior INRs cannot remedy this signal strength deficit, since they fit to both the signal as well as interfering factors. In this work, we introduce an INR framework that increases this plethysmograph signal strength. Specifically, we leverage architectures to have selective representation capabilities. We are able to decompose the face video into a blood plethysmograph component, and a face appearance component. By inferring the plethysmograph signal from this blood component, we show state-of-the-art performance on out-of-distribution samples without sacrificing performance for in-distribution samples. We implement our framework on a custom-built multiresolution hash encoding backbone to enable practical dataset-scale representations through a 50x speed-up over traditional INRs. We also present a dataset of optically challenging out-of-distribution scenes to test generalization to real-world scenarios.
-          </p>
-          <br> <br> <br>
-          <div class="columns is-centered has-text-centered">
-            <!-- <div class="column is-four-fifths"> -->
-              <!-- <h2 class="title is-3">Video</h2> -->
-              <div class="publication-video">
-                <!-- TODO: Add paper video once out -->
-                <!-- <iframe src="https://www.youtube.com/embed/FMAVeolsE7s?si=IAd06858AHk8zxvL"
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Scene representation networks, or implicit neural representations (INR) have seen a range of success in
+                numerous image and video applications. However, being universal function fitters, they fit all
+                variations in videos without any selectivity. This is particularly a problem for tasks such as remote
+                plethysmography, the extraction of heart rate information from face videos. As a result of low native
+                signal to noise ratio, previous signal processing techniques suffer from poor performance, while
+                previous learning-based methods have improved performance but suffer from hallucinations that mitigate
+                generalizability. Directly applying prior INRs cannot remedy this signal strength deficit, since they
+                fit to both the signal as well as interfering factors. In this work, we introduce an INR framework that
+                increases this plethysmograph signal strength. Specifically, we leverage architectures to have selective
+                representation capabilities. We are able to decompose the face video into a blood plethysmograph
+                component, and a face appearance component. By inferring the plethysmograph signal from this blood
+                component, we show state-of-the-art performance on out-of-distribution samples without sacrificing
+                performance for in-distribution samples. We implement our framework on a custom-built multiresolution
+                hash encoding backbone to enable practical dataset-scale representations through a 50x speed-up over
+                traditional INRs. We also present a dataset of optically challenging out-of-distribution scenes to test
+                generalization to real-world scenarios.
+              </p>
+              <br> <br> <br>
+              <div class="columns is-centered has-text-centered">
+                <!-- <div class="column is-four-fifths"> -->
+                <!-- <h2 class="title is-3">Video</h2> -->
+                <div class="publication-video">
+                  <!-- TODO: Add paper video once out -->
+                  <!-- <iframe src="https://www.youtube.com/embed/FMAVeolsE7s?si=IAd06858AHk8zxvL"
                         frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-                <!-- <p>Coming soon!</p> -->
-                <!-- Instead of the Video show the image ./teaser.png -->
-                <img src="./media/teaser.png"
-                     class="interpolation-image"
-                     alt="Interpolate start reference image."/>
+                  <!-- <p>Coming soon!</p> -->
+                  <!-- Instead of the Video show the image ./teaser.png -->
+                  <img src="./media/teaser.png" class="interpolation-image" alt="Interpolate start reference image." />
+                </div>
+                <!-- </div> -->
               </div>
-            <!-- </div> -->
+              <!--/ Paper video. -->
+            </div>
           </div>
-          <!--/ Paper video. -->
         </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
+        <!--/ Abstract. -->
 
-    <!-- Pipeline. -->
-    <!-- <h3 class="title is-4">Methodology</h3>
+        <!-- Pipeline. -->
+        <!-- <h3 class="title is-4">Methodology</h3>
     <div class="content has-text-justified">
       <p>
       </p>
@@ -417,274 +416,133 @@
         <p>...</p>
       </div>
     </div> -->
-    <!--/ Pipeline. -->
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    
-    <!-- <h3 class="title is-3">Scene Editing</h3>
-    <p>
-      The explicit nature of the compositional radiance field, enables scene editing. 
-      We show a scene of "A table with a banana and plant in front of a couch that is next to a lamp on a stool", 
-      which we first edit remove the lamp on the stool, 
-      then move the potted plant from the table to the stool, 
-      and lastly, edit the couch to become "a red leather couch".  <br> <br>
-    </p>
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-6">Original Scene</h2>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./media/editing/edit_scene_original.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+        <!--/ Pipeline. -->
       </div>
-      <div class="column">
-        <h2 class="title is-6">Deleting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
-              <source src="./media/editing/edit_scene_delete.mp4"
-              type="video/mp4">
-            </video>
+    </section>
+
+
+    <section class="section">
+      <div class="columns is-centered">
+        <div class="column is-two-thirds has-text-centered">
+          <h2 class="title is-3">TITLE????</h2>
+          <!-- Fig 3 -->
+          <div>
+            <div>
+              <p>
+                <br> Sinusoidal Representation Networks (SRNs) are able to represent both $\mathcal{A}$ and
+                $\mathcal{B}$-functions, while phase-based methods can only represent the $\mathcal{A}$-function. This
+                provides hints for $\mathcal{A}$-$\mathcal{B}$ decomposition. SRNs are able to capture the
+                plethysmograph color variations almost perfectly, while phase-based motion representations are unable to
+                capture it.
+              </p>
+            </div>
+            <div>
+              <!-- Use the image sirenMotionCompare.png -->
+              <img src="./media/sirenMotionCompare.png" class="interpolation-image"
+                alt="Interpolate start reference image." />
+            </div>
           </div>
 
+          <br> <br>
+
+          <!-- Fig 4 -->
+          <div>
+            <div>
+              <p>
+                <br>To enable fast $\mathcal{A}$-$\mathcal{B}$ decomposition, we use implicit neural representations as
+                decomposing function fitters. Training is done sequentially: first, the cascaded appearance model learns
+                the $\mathcal{A}$-function. Then, the appearance model is frozen and the residual model learns the
+                $\mathcal{B}$-function, thereby completing the decomposition. The use of multiresolution hash encodings
+                makes dataset-scale decomposition viable.
+              </p>
+            </div>
+            <div>
+              <!-- Use the image sirenMotionCompare.png -->
+              <img src="./media/implicit_decomp.png" class="interpolation-image"
+                alt="Interpolate start reference image." />
+            </div>
+          </div>
+
+          <br> <br>
+
+          <!-- Fig 5 -->
+          <div>
+            <div>
+              <p>
+                <br>Using the implicitly decomposed $\mathcal{B}$-function along with the original video, we learn
+                high-fidelity neural signal strength masks. The network takes the original RGB frames and the
+                $\mathcal{B}$-function estimate as inputs and returns a spatial strength mask. Training is supervised
+                through an auxiliary 1-D CNN whose training target is the prediction of an accurate plethysmograph. The
+                1-D CNN is discarded post-training and the learned mask model is used at inference time to generate
+                weight masks to estimate a plethysmograph signal from the $\mathcal{B}$-function.
+              </p>
+            </div>
+            <div>
+              <!-- Use the image sirenMotionCompare.png -->
+              <img src="./media/pipeline_v2.png" class="interpolation-image" alt="Interpolate start reference image." />
+            </div>
+          </div>
+
+          <br> <br>
+
+          <!-- Fig 6 -->
+          <div>
+            <div>
+              <p>
+                <br>Across challenging OOD optical settings, the proposed method is able to capture details of the
+                plethysmograph waveform when compared to prior methods.
+              </p>
+            </div>
+            <div>
+              <!-- Use the image sirenMotionCompare.png -->
+              <img src="./media/big results rc.png" class="interpolation-image"
+                alt="Interpolate start reference image." />
+            </div>
+          </div>
+
+
         </div>
       </div>
+    </section>
 
-      
-    </div>
-    <div class="columns is-centered">
 
-      <div class="column">
-        <h2 class="title is-6">Rearrange</h2>
+    <!-- TODO: BibTeX -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@inproceedings{chari2024implicit,
+        title={Implicit Neural Models to Extract Heart Rate from Video},
+        author={Chari, Pradyumna and Harish, Anirudh Bindiganavale and Armouti, Adnan and Vilesov, Alexander and Sarda, Sanjit and Jalilian, Laleh and Kadambi, Achuta},
+        booktitle={European conference on computer vision},
+        year={2024},
+        organization={Springer}
+      }</code></pre>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <a class="icon-link" href="">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+          <a class="icon-link" href="" class="external-link" disabled>
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
         <div class="columns is-centered">
-          <div class="column content">
-            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
-              <source src="./media/editing/edit_scene_rearrange.mp4"
-              type="video/mp4">
-            </video>
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                Source code borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </footer>
 
-      <div class="column">
-        <h2 class="title is-6">Editing</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
-              <source src="./media/editing/edit_scene_editing.mp4"
-              type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
+  </body>
 
-      
-    </div> -->
-
-    <!-- <style>
-      .before,
-      .after {
-        margin: 0;
-      }
-    
-      .before figcaption,
-      .after figcaption {
-        background: #fff;
-        border: 1px solid #c0c0c0;
-        border-radius: 4px;
-        color: #2e3452;
-        opacity: 0.8;
-        padding: 4px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        line-height: 100%;
-      }
-    
-      .before figcaption {
-        left: 4px;
-      }
-    
-      .after figcaption {
-        right: 4px;
-      }
-    </style> -->
-
-
-    
-
-    <!-- <h2 class="title is-3">Distillation</h2>
-    <div class="columns is-centered">
-
-      <div class="column">
-        <div>
-          <p>
-            <br>  Gaussian radiance field generation for text-to-3D neccesistates frequency duplication of Gaussians to enable expressability. 
-            However, this results in a large number of Gaussians, many of which are redundant. 
-            We propose a distillation method to reduce the number of Gaussians while maintaining the quality of the generated scene. 
-            This enables better scalability for compositions with many objects. 
-            To the right, we show an example of a generated 3D pear that has been distilled (for visualization, we also include a rendering with the Gaussians scaled down to 1%). 
-          </p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div>
-          <img-comparison-slider>
-            <figure slot="first" class="before">
-              <img height="100%" width="100%" src="./media/distill/dense.png">
-              <figcaption>30,360 Gaussians <br> &#8203 &#8203 &#8203 &#8203 &#8203 &#8203 &#8203 &#8203 Original </figcaption>
-            </figure>
-            <figure slot="second" class="after">
-              <img height="100%" width="100%" src="./media/distill/distill.png">
-              <figcaption>4,096 Gaussians <br> &#8203 &#8203 &#8203 &#8203 &#8203 &#8203 &#8203 &#8203 Distilled</figcaption>
-          </img-comparison-slider>
-        </div>
-      </div>
-
-      <div class="column">
-      <div>
-        <img-comparison-slider>
-          <figure slot="first" class="before">
-            <img width="100%" src="./media/distill/dense_small_scale.png">
-            <figcaption>30,360 Gaussians <br> &#8203 &#8203 &#8203 &#8203 &#8203 &#8203 &#8203 &#8203 Original </figcaption>
-          </figure>
-          <figure slot="second" class="after">
-            <img width="100%" src="./media/distill/distill_small_scale.png">
-            <figcaption>4,096 Gaussians <br> &#8203 &#8203 &#8203 &#8203 &#8203 &#8203 &#8203 &#8203 Distilled </figcaption>
-        </img-comparison-slider>
-      </div>
-      </div>
-
-    </div> -->
-
-    <!-- Fig 3 -->
-    <div class="columns is-centered">
-      <div class="column">
-        <div>
-          <p>
-            <br>  Sinusoidal Representation Networks (SRNs) are able to represent both $\mathcal{A}$ and $\mathcal{B}$-functions, while phase-based methods can only represent the $\mathcal{A}$-function. This provides hints for $\mathcal{A}$-$\mathcal{B}$ decomposition.} (a)~SRNs, such as~\cite{sitzmann2020implicit} are able to capture the plethysmograph color variations almost perfectly, while (b)~phase-based motion representations, such as~\cite{mai2022motion} are unable to capture it.}
-            \label{fig:motionSiren} 
-          </p>
-        </div>
-      </div>
-      <div class="column">
-        <div>
-          <!-- Use the image sirenMotionCompare.png -->
-          <img src="./media/sirenMotionCompare.png"
-               class="interpolation-image"
-               alt="Interpolate start reference image."/>
-        </div>
-      </div>
-    </div>
-
-    <!-- Fig 4 -->
-    <div class="columns is-centered">
-      <div class="column">
-        <div>
-          <p>
-            <br>  \caption{\textbf{To enable fast $\mathcal{A}$-$\mathcal{B}$ decomposition, we use implicit neural representations as decomposing function fitters.} Training is done sequentially: first, the cascaded appearance model learns the $\mathcal{A}$-function. Then, the appearance model is frozen and the residual model learns the $\mathcal{B}$-function, thereby completing the decomposition. The use of multiresolution hash encodings makes dataset-scale decomposition viable.}
-          </p>
-        </div>
-      </div>
-      <div class="column">
-        <div>
-          <!-- Use the image sirenMotionCompare.png -->
-          <img src="./media/implicit_decomp.png"
-               class="interpolation-image"
-               alt="Interpolate start reference image."/>
-        </div>
-      </div>
-    </div>
-
-    <!-- Fig 5 -->
-    <div class="columns is-centered">
-      <div class="column">
-        <div>
-          <p>
-            <br>  \caption{\textbf{Using the implicitly decomposed $\mathcal{B}$-function along with the original video, we learn high-fidelity neural signal strength masks.} The network takes the original RGB frames and the $\mathcal{B}$-function estimate as inputs and returns a spatial strength mask. Training is supervised through an auxiliary 1-D CNN whose training target is the prediction of an accurate plethysmograph. The 1-D CNN is discarded post-training and the learned mask model is used at inference time to generate weight masks to estimate a plethysmograph signal from the $\mathcal{B}$-function.}
-          </p>
-        </div>
-      </div>
-      <div class="column">
-        <div>
-          <!-- Use the image sirenMotionCompare.png -->
-          <img src="./media/pipeline_v2.png"
-               class="interpolation-image"
-               alt="Interpolate start reference image."/>
-        </div>
-      </div>
-    </div>
-
-    <!-- Fig 6 -->
-    <div class="columns is-centered">
-      <div class="column">
-        <div>
-          <p>
-            <br>      \caption{ \textbf{Across challenging OOD optical settings, the proposed method is able to capture details of the plethysmograph waveform when compared to prior methods.} Results shown use models trained on the dataset proposed in~\cite{vilesov2022blending}, where applicable. Additional results in the supplement.}
-          </p>
-        </div>
-      </div>
-      <div class="column">
-        <div>
-          <!-- Use the image sirenMotionCompare.png -->
-          <img src="./media/big results rc.png"
-               class="interpolation-image"
-               alt="Interpolate start reference image."/>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-
-</section>
-
-
-<!-- TODO: BibTeX -->
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{vilesov23cg3d,
-  author    = {Vilesov, Alexander and Chari, Pradyumna and Kadambi, Achuta},
-  title     = {CG3D: Implicit Neural Models to Extract Heart Rate from Video},
-  journal   = {Arxiv},
-  year      = {2023},
-}</code></pre>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            Source code borrowed from <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-</body>
 </html>
